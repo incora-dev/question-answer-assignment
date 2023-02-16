@@ -1,0 +1,70 @@
+@mixin display-flex($justify: null, $align: null, $wrap: null, $direction: null, $grow: null, $gap: null) {
+    display: flex;
+    @if $justify {
+        justify-content: $justify;
+    }
+    @if $align {
+        align-items: $align;
+    }
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+    @if $direction {
+        flex-direction: $direction;
+    }
+    @if $grow {
+        flex-grow: $grow;
+    }
+    @if $gap {
+        gap: $gap;
+    }
+}
+
+@mixin font-style(
+    $size: null,
+    $bold: null,
+    $color: null,
+    $align: null,
+    $lineHeight: null,
+    $transform: null,
+    $spacing: null,
+    $verticalAlign: null,
+    $family: null,
+    $decoration: null,
+    $fill: null
+) {
+    @if $size {
+        font-size: $size;
+    }
+    @if $bold {
+        font-weight: $bold;
+    }
+    @if $color {
+        color: $color;
+    }
+    @if $align {
+        text-align: $align;
+    }
+    @if $lineHeight {
+        line-height: $lineHeight;
+    }
+    @if $transform {
+        text-transform: $transform;
+    }
+    @if $spacing {
+        letter-spacing: $spacing;
+    }
+    @if $verticalAlign {
+        vertical-align: $verticalAlign;
+    }
+    @if $family {
+        font-family: $family;
+    }
+    @if $decoration {
+        text-decoration: $decoration;
+    }
+    @if $fill {
+        fill: $fill;
+    }
+}
+

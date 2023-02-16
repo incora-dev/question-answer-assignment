@@ -1,0 +1,27 @@
+@import "@styles";
+
+.login-box {
+  width: 400px;
+  border-radius: 3px;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+
+  label {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+
+    input {
+      font-size: 25px;
+      width: 100%;
+    }
+
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+}
